@@ -1,0 +1,8 @@
+<h1>Restore</h1>
+
+<p>Are you sure you want to restore the post : {{ post }}?</p>
+<a href="{{ request.META.HTTP_REFERER }}">Go Back</a>
+<form action="" method="POST">
+   {% csrf_token %}
+   <input type="submit" value="Yes, restore."/>
+</form>

@@ -1,0 +1,8 @@
+<h1>{{ category.name }}</h1>
+{% for item in category.categories %}
+<h3>{{ item.title }}</h3>
+<li>{{ item.intro }}</li>
+<li>{{ item.description }}</li>
+{% empty %}
+<h1>There is no post for this category</h1>
+{% endfor %}
